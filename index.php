@@ -43,78 +43,19 @@
         <main>
             <div class="container mt-5">
                 <div class="row row-cols-3 g-3">
-                    <div class="col">
-                        <div class="card p-3">
-                            <div class="ratio ratio-1x1">
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" class="card-img-top" alt="">
+                    <div class="col" v-for="disk in listDisks">
+                        <div class="card p-3" style="background-color: #112030">
+                            <div class="m-auto ratio ratio-1x1 w-75">
+                                <img :src="disk.poster" class="card-img-top"  alt="disk_img">
                             </div>
-                            <div class="card-body text-center">
-                                <h5 class="card-title fw-bold">New Jersey</h5>
-                                <p class="card-text fs-5">Bon Jovi</p>
-                                <p class="card-text fw-bold fs-5">1988</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card p-3">
-                            <div class="ratio ratio-1x1">
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" class="card-img-top" alt="">
-                            </div>
-                            <div class="card-body text-center">
-                                <h5 class="card-title fw-bold">New Jersey</h5>
-                                <p class="card-text fs-5">Bon Jovi</p>
-                                <p class="card-text fw-bold fs-5">1988</p>
+                            <div class="card-body text-center text-light">
+                                <h5 class="card-title fw-bold">{{disk.title}}</h5>
+                                <p class="card-text fs-5">{{disk.author}}</p>
+                                <p class="card-text fw-bold fs-5">{{disk.year}}</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card p-3">
-                            <div class="ratio ratio-1x1">
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" class="card-img-top" alt="">
-                            </div>
-                            <div class="card-body text-center">
-                                <h5 class="card-title fw-bold">New Jersey</h5>
-                                <p class="card-text fs-5">Bon Jovi</p>
-                                <p class="card-text fw-bold fs-5">1988</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card p-3">
-                            <div class="ratio ratio-1x1">
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" class="card-img-top" alt="">
-                            </div>
-                            <div class="card-body text-center">
-                                <h5 class="card-title fw-bold">New Jersey</h5>
-                                <p class="card-text fs-5">Bon Jovi</p>
-                                <p class="card-text fw-bold fs-5">1988</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card p-3">
-                            <div class="ratio ratio-1x1">
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" class="card-img-top" alt="">
-                            </div>
-                            <div class="card-body text-center">
-                                <h5 class="card-title fw-bold">New Jersey</h5>
-                                <p class="card-text fs-5">Bon Jovi</p>
-                                <p class="card-text fw-bold fs-5">1988</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card p-3">
-                            <div class="ratio ratio-1x1">
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" class="card-img-top" alt="">
-                            </div>
-                            <div class="card-body text-center">
-                                <h5 class="card-title fw-bold">New Jersey</h5>
-                                <p class="card-text fs-5">Bon Jovi</p>
-                                <p class="card-text fw-bold fs-5">1988</p>
-                            </div>
-                        </div>
-                    </div>
+
 
                 </div>
 
@@ -123,9 +64,9 @@
         </main>
 
     </div>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 
 </html>

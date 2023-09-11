@@ -11,5 +11,10 @@ header {
 
 body{
     background-color: #1D2D3C !important;
+    height: 100vh;
 }
 
+.card{ 
+    --bs-card-bg: #112030 !important;
+    
+}
