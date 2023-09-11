@@ -40,13 +40,14 @@
             </nav>
         </header>
 
-        <main>
-            <div class="container mt-5">
+        <main class="">
+            <div class="container mt-5 position-relative ">
                 <div class="row row-cols-3 g-3">
                     <div class="col" v-for="disk in listDisks">
                         <div class="card p-3" style="background-color: #112030">
+                            
                             <div class="m-auto ratio ratio-1x1 w-75">
-                                <img :src="disk.poster" class="card-img-top"  alt="disk_img">
+                                <img :src="disk.poster" class="card-img-top" alt="disk_img">
                             </div>
                             <div class="card-body text-center text-light">
                                 <h5 class="card-title fw-bold">{{disk.title}}</h5>
@@ -55,7 +56,6 @@
                             </div>
                         </div>
                     </div>
-
 
                 </div>
 
